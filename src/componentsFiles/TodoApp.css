@@ -1,0 +1,74 @@
+#todo_app {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#todo_app #inp_container {
+    background-color: rgb(155, 183, 221);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#todo_app #inp_container #inp {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+#todo_app #inp_container #inp #task {
+    width: 70%;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+}
+
+#todo_app #inp_container #inp #add {
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: rgb(28, 187, 68);
+    color: white;
+    border: none;
+    transition: all 1s ease;
+}
+
+#todo_app #inp_container #inp #add:hover {
+    background-color: rgb(247, 88, 239);
+    color: rgb(12, 12, 12);
+}
+
+#todo_app #tasks {
+    width: 90%;
+    margin: 2%;
+}
+
+#todo_app #tasks ol {
+    border-radius: 8px;
+    margin: 10px;
+}
+
+#todo_app #tasks ol li{
+    margin: 5px;
+    background-color: rgb(227, 162, 243);
+    border-radius: 8px;
+}
+
+#todo_app #tasks li::marker {
+    color: rgb(59, 59, 230);
+    font-size: 20px;
+}
+
+#todo_app #tasks input {
+    background-color: rgb(219, 58, 58);
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-bottom: 5px;
+}
