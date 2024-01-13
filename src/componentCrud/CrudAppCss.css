@@ -1,0 +1,28 @@
+.delete {
+    background-color: #f35d5d;
+    margin-left: 10px;
+    border: none;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.edit {
+    background-color: chartreuse;
+    margin-left: 10px;
+    border: none;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+div ol li{
+    margin: 5px;
+}
+div input {
+    padding: 5px;
+}
+
+div #submit{
+    margin-left: 10px;
+}

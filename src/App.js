@@ -1,6 +1,12 @@
 // import { createContext } from 'react';
-// import './App.css';
-import ReadMoreParent from './components/ReadMoreParent';
+import './App.css';
+import SearchWhenClickButton from './componentFetchApi/SearchWhenClickButton';
+// import FakeStoreProducts from './componentFetchApi/FakeStoreProducts';
+// import Loader from './componentFetchApi/Loader';
+// import SearchBox from './componentFetchApi/SearchBox';
+// import AgeC from './componentAgeCalculator/AgeC';
+// import AgeCalcutaltor from './componentAgeCalculator/AgeCalculator';
+// import ReadMoreParent from './components/ReadMoreParent';
 // import ReadLessMore from './componentsFiles/ReadLessMore';
 // import TodoApp from './componentsFiles/TodoApp';
 // import CheckBox from './componentsFiles/CheckBox';
@@ -9,6 +15,13 @@ import ReadMoreParent from './components/ReadMoreParent';
 // import Parent2 from './componentsFiles/Parent2';
 // import UseStateDemo from './componentsFiles/UseStateDemo';
 // import A from './componentsFiles/A';
+
+// import CrudApp from "./componentCrud/CrudApp";
+// import CrudComponent from './componentCrud/CrudComponent';
+
+// import FetchApiAsyncAwait from "./componentFetchApi/FetchApiAsyncAwait";
+
+// import UseEffectApp from "./componentUseEffect/UseEffectApp";
 
 // export let DummiContext1 = createContext();
 // export let DummiContext2 = createContext();
@@ -39,15 +52,26 @@ function App() {
     // <>
     //   <Parent2></Parent2>
     // </>
-    
+
     // <UseStateDemo></UseStateDemo>
     <div >
+      {/* AgeCalculatorCSS */}
       {/* <Accordion></Accordion> */}
       {/* <StateWithInputs></StateWithInputs> */}
       {/* <CheckBox></CheckBox> */}
       {/* <TodoApp></TodoApp> */}
       {/* <ReadLessMore></ReadLessMore> */}
-      <ReadMoreParent/>
+      {/* <ReadMoreParent/> */}
+      {/* <UseEffectApp/> */}
+      {/* <FetchApiAsyncAwait/> */}
+      {/* <CrudApp/> */}
+      {/* <CrudComponent/> */}
+      {/* <AgeCalcutaltor/> */}
+      {/* <AgeC /> */}
+      {/* <SearchBox /> */}
+      {/* <FakeStoreProducts /> */}
+      {/* <Loader/> */}
+      <SearchWhenClickButton/>
     </div>
   );
 }

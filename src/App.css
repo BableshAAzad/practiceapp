@@ -1,7 +1,11 @@
 body {
   text-align: center;
 }
-
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .alignItems {
   display: flex;
   justify-content: center;
@@ -14,3 +18,19 @@ body {
   margin-right: auto;
   background-color: rgb(185, 240, 221);
 }
+/* 
+@media(max-width:700px){
+  .alignItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 200px;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(185, 240, 221);
+  }
+  
+} */
