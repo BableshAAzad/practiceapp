@@ -1,6 +1,18 @@
 // import { createContext } from 'react';
 import './App.css';
-import SearchWhenClickButton from './componentFetchApi/SearchWhenClickButton';
+import ChangeColor from './componentCustomHooks/ChangeColor';
+// import CalculatorUseReducer from './comUseReducer/CalculatorUseReducer';
+// import TodoPopUp from './comUseReducer/TodoPopUp';
+// import FetchApiUsingUseReducer from './comUseReducer/FetchApiUsingUseReducer';
+// import TodoReducer2 from './comUseReducer/TodoReducer2';
+// import MyComponent1 from "./componentCustomHooks/MyComponent1"
+// import TodoUseReducerHook from './comUseReducer/TodoUseReducerHook';
+// import FakeStoreProducts from './componentCustomHooks/FakeStoreProducts';
+// import PicSlider from './componentSlider/PicSlider';
+// import TodoApp from './componentsFiles/TodoApp';
+// import StateWithInputs from './componentsFiles/StateWithInputs';
+// import JsonPosts from './componentCustomHooks/JsonPosts';
+// import SearchWhenClickButton from './componentFetchApi/SearchWhenClickButton';
 // import FakeStoreProducts from './componentFetchApi/FakeStoreProducts';
 // import Loader from './componentFetchApi/Loader';
 // import SearchBox from './componentFetchApi/SearchBox';
@@ -8,9 +20,7 @@ import SearchWhenClickButton from './componentFetchApi/SearchWhenClickButton';
 // import AgeCalcutaltor from './componentAgeCalculator/AgeCalculator';
 // import ReadMoreParent from './components/ReadMoreParent';
 // import ReadLessMore from './componentsFiles/ReadLessMore';
-// import TodoApp from './componentsFiles/TodoApp';
 // import CheckBox from './componentsFiles/CheckBox';
-// import StateWithInputs from './componentsFiles/StateWithInputs';
 // import Accordion from './componentsFiles/Accordion';
 // import Parent2 from './componentsFiles/Parent2';
 // import UseStateDemo from './componentsFiles/UseStateDemo';
@@ -57,9 +67,7 @@ function App() {
     <div >
       {/* AgeCalculatorCSS */}
       {/* <Accordion></Accordion> */}
-      {/* <StateWithInputs></StateWithInputs> */}
       {/* <CheckBox></CheckBox> */}
-      {/* <TodoApp></TodoApp> */}
       {/* <ReadLessMore></ReadLessMore> */}
       {/* <ReadMoreParent/> */}
       {/* <UseEffectApp/> */}
@@ -71,7 +79,22 @@ function App() {
       {/* <SearchBox /> */}
       {/* <FakeStoreProducts /> */}
       {/* <Loader/> */}
+      {/* <PicSlider />
+      <TodoApp></TodoApp>
+      <h2 style={{color : "blue", margin: "5px"}}>Form with useState</h2>
+      <StateWithInputs></StateWithInputs> */}
+      {/* <div style={{border : "2px solid black", margin: "5px"}}>
       <SearchWhenClickButton/>
+      </div> */}
+      {/* <JsonPosts/> */}
+      {/* <TodoUseReducerHook /> */}
+      {/* <FakeStoreProducts/> */}
+      {/* <TodoReducer2/> */}
+      {/* <MyComponent1 /> */}
+      {/* <TodoPopUp/> */}
+      {/* <FetchApiUsingUseReducer/> */}
+      {/* <CalculatorUseReducer/> */}
+      <ChangeColor/>
     </div>
   );
 }

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import "./StateWithInputs.css";
 
 function StateWithInputs() {
   let [fdata, setdata] = useState({ fn: "", ln: "", email: "", gender: "", state: "", skills: [] });
@@ -14,8 +15,8 @@ function StateWithInputs() {
     e.preventDefault();
   }
   return (
-    <>
-      <form onSubmit={setFormData}>
+    <div id='stateForm'>
+      <form onSubmit={setFormData} >
         <label htmlFor="fname">First Name</label>
         <input type="text" name='fn' placeholder='First Name' id='fname' onChange={updateFormData} autoComplete='on'/><br /><br />
         <label htmlFor="lname">Last Name</label>
@@ -44,7 +45,7 @@ function StateWithInputs() {
         <br /><br />
         <input type="submit" />
       </form>
-    </>
+    </div>
   )
 }
 

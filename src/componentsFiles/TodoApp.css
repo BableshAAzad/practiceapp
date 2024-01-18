@@ -1,3 +1,10 @@
+#productCoun{
+    margin: 10px;
+    margin-left: 70%;
+    color: rgb(8, 8, 192);
+    font-weight: 600;
+    font-size: large;
+}
 #todo_app {
     border: 1px solid red;
     display: flex;
@@ -5,6 +12,7 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    margin-top: 10px;
 }
 
 #todo_app #inp_container {
@@ -13,6 +21,7 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+    box-shadow: 1px 1px 15px 1px rgb(7, 240, 77);
 }
 
 #todo_app #inp_container #inp {
@@ -26,12 +35,14 @@
     font-size: 17px;
     border: none;
     border-radius: 5px;
+    padding-left: 10px;
 }
 
 #todo_app #inp_container #inp #add {
     padding: 5px 20px;
     border-radius: 5px;
     background-color: rgb(28, 187, 68);
+    box-shadow: 1px 1px 4px rgb(235, 219, 1);
     color: white;
     border: none;
     transition: all 1s ease;
@@ -45,6 +56,9 @@
 #todo_app #tasks {
     width: 90%;
     margin: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid blue; */
 }
 
 #todo_app #tasks ol {
@@ -64,6 +78,15 @@
 }
 
 #todo_app #tasks input {
+    background-color: rgb(219, 58, 58);
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-bottom: 5px;
+}
+#todo_app #tasks button {
     background-color: rgb(219, 58, 58);
     color: white;
     border: none;
