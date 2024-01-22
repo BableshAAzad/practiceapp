@@ -2,7 +2,7 @@ import React from 'react'
 import useColorChange from './useColorChange'
 
 function ChangeColor() {
-    useColorChange()
+    useColorChange("red", "black")
   return (
     <div>
       <h1>Hello</h1>

@@ -1,8 +1,8 @@
 
 function useColorChange(initCol = "white", bgInitCol = "black") {
    
-      document.style.color = initCol;
-      document.style.backgroundColor = initCol;
+      document.body.style.color = initCol;
+      document.body.style.backgroundColor = bgInitCol;
 
 //   return (
 //     <>

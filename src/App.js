@@ -1,6 +1,35 @@
 // import { createContext } from 'react';
 import './App.css';
-import ChangeColor from './componentCustomHooks/ChangeColor';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from './comReactRouterDom/Home';
+import Navbar from './comReactRouterDom/Navbar';
+import About from './comReactRouterDom/About';
+import Contact from './comReactRouterDom/Contact';
+import LoginForm from './comReactRouterDom/LoginForm';
+import Pnf from './comReactRouterDom/Pnf';
+
+import Laptop from "./comReactRouterDom/ProductsItems/Laptop"
+import Mobile from "./comReactRouterDom/ProductsItems/Mobile"
+import Pendrive from "./comReactRouterDom/ProductsItems/Pendrive"
+import Shoes from "./comReactRouterDom/ProductsItems/Shoes"
+import Watches from "./comReactRouterDom/ProductsItems/Watches"
+import Products from './comReactRouterDom/Products';
+import HomeWorkTasks from './comReactRouterDom/HomeWorkTasks';
+
+// import UseIdHookExample from './comUsIdHook/UseIdHookExample';
+// import UseMouseOverMain from './componentCustomHooks/UseMouseOverMain';
+// import UseMouseOverMain2 from './componentCustomHooks/UseMouseOverMain2';
+// import ParentDemoColor from './comChildToParentExmple/ParentDemoColor';
+// import FilteredListMain from './componentMemoCallback/comUseMemo/FilteredListMain';
+// import UseMemoDemo from './componentMemoCallback/comUseMemo/UseMemoDemo';
+// import ParentKiran from './comKiranFandoApp/ParentKiran';
+// import Cparent from './componentMemoCallback/comUseCallBack/Cparent';
+// import Parent from './componentMemoCallback/comReactMemo/Parent';
+// import ParentComponent from './componentMemoCallback/ParentComponent';
+// import UseHoverDemo from './componentCustomHooks/UseHoverDemo';
+// import UseKeyPressDemo from './componentCustomHooks/UseKeyPressDemo';
+// import ChangeColor from './componentCustomHooks/ChangeColor';
+// import useColorChange from './componentCustomHooks/useColorChange';
 // import CalculatorUseReducer from './comUseReducer/CalculatorUseReducer';
 // import TodoPopUp from './comUseReducer/TodoPopUp';
 // import FetchApiUsingUseReducer from './comUseReducer/FetchApiUsingUseReducer';
@@ -40,6 +69,7 @@ function App() {
   // let myName = {firstName : "Bablesh", lastName : "AAzad"};
   // let age = 49;
   // let temp = false;
+  // useColorChange("green", "black")
   return (
     // <div className="App">
     //   <h1>Hello App Component</h1>
@@ -64,7 +94,9 @@ function App() {
     // </>
 
     // <UseStateDemo></UseStateDemo>
-    <div >
+    // <div >
+    <BrowserRouter>
+
       {/* AgeCalculatorCSS */}
       {/* <Accordion></Accordion> */}
       {/* <CheckBox></CheckBox> */}
@@ -94,9 +126,42 @@ function App() {
       {/* <TodoPopUp/> */}
       {/* <FetchApiUsingUseReducer/> */}
       {/* <CalculatorUseReducer/> */}
-      <ChangeColor/>
-    </div>
+      {/* <ChangeColor/> */}
+      {/* <h3>App component</h3> */}
+      {/* <UseKeyPressDemo /> */}
+      {/* <UseHoverDemo/> */}
+      {/* <ParentComponent /> */}
+      {/* <Parent/> */}
+      {/* <Cparent/> */}
+      {/* <ParentKiran/> */}
+      {/* <UseMemoDemo/> */}
+      {/* <FilteredListMain/> */}
+
+
+      {/* <ParentDemoColor/> */}
+      {/* <UseIdHookExample titleHeading="Client" /><br/><br />
+      <UseIdHookExample titleHeading="Server" /> */}
+      {/* <UseMouseOverMain/> */}
+      {/* <UseMouseOverMain2/> */}
+      {/* </div> */}
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/homeWorkTasks' element={<HomeWorkTasks />} />
+        <Route path='/about' element={<About />} />
+        <Route path="/products" element={<Products />}>
+          <Route index element={<Shoes />} />
+          <Route path="laptop" element={<Laptop />} />
+          <Route path="mobile" element={<Mobile />} />
+          <Route path="pendrive" element={<Pendrive />} />
+          <Route path="shoes" element={<Shoes />} />
+          <Route path="watches" element={<Watches />} />
+        </Route>
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/loginForm' element={<LoginForm />} />
+        <Route path='*' element={<Pnf />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
 export default App;

@@ -1,0 +1,11 @@
+#navItems {
+    background-color: rgb(63, 34, 230);
+    padding: 10px;
+    margin-bottom: 50px;
+}
+#navItems a{
+    font-size: 20px;
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+}

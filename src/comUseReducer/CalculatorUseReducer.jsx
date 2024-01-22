@@ -27,7 +27,7 @@ function CalculatorUseReducer() {
             <h3 id='heading'>Calculator using useReducer</h3>
             <h3>Result : <span style={{ color: "blue" }}>{val}</span></h3>
             <input type='number' placeholder='First Num' id='num1' onChange={getVal1} />
-            <input type='number' placeholder='Second Num' id='num1' onChange={getVal2} /><br />
+            <input type='number' placeholder='Second Num' id='num2' onChange={getVal2} /><br />
             <button className='btn' onClick={() => { dispatcher({ type: "ADD", data: [val1, val2] }) }}>+</button>
             <button className='btn' onClick={() => { dispatcher({ type: "SUB", data: [val1, val2] }) }}>-</button>
             <button className='btn' onClick={() => { dispatcher({ type: "MUL", data: [val1, val2] }) }}>*</button>
