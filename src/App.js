@@ -9,12 +9,16 @@ import LoginForm from './comReactRouterDom/LoginForm';
 import Pnf from './comReactRouterDom/Pnf';
 
 import Laptop from "./comReactRouterDom/ProductsItems/Laptop"
-import Mobile from "./comReactRouterDom/ProductsItems/Mobile"
+// import Mobile from "./comReactRouterDom/ProductsItems/Mobile"
 import Pendrive from "./comReactRouterDom/ProductsItems/Pendrive"
-import Shoes from "./comReactRouterDom/ProductsItems/Shoes"
 import Watches from "./comReactRouterDom/ProductsItems/Watches"
 import Products from './comReactRouterDom/Products';
 import HomeWorkTasks from './comReactRouterDom/HomeWorkTasks';
+import ProductDetails from './comReactRouterDom/ProductDetails';
+import { lazy } from 'react';
+import Shoes from "./comReactRouterDom/ProductsItems/Shoes"
+import ShoesDetails from './comReactRouterDom/ProductsItems/ShoesDetails';
+let Mobile = lazy(() => import("./comReactRouterDom/ProductsItems/Mobile"))
 
 // import UseIdHookExample from './comUsIdHook/UseIdHookExample';
 // import UseMouseOverMain from './componentCustomHooks/UseMouseOverMain';
@@ -155,13 +159,15 @@ function App() {
           <Route path="mobile" element={<Mobile />} />
           <Route path="pendrive" element={<Pendrive />} />
           <Route path="shoes" element={<Shoes />} />
+          <Route path="shoes/:shoesId" element={<ShoesDetails />} />
           <Route path="watches" element={<Watches />} />
         </Route>
         <Route path='/contact' element={<Contact />} />
         <Route path='/loginForm' element={<LoginForm />} />
+        <Route path="/products/mobile/:pid" element={<ProductDetails />} />
         <Route path='*' element={<Pnf />} />
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter >
   );
 }
 export default App;
