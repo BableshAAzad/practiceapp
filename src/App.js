@@ -18,6 +18,7 @@ import ProductDetails from './comReactRouterDom/ProductDetails';
 import { lazy } from 'react';
 import Shoes from "./comReactRouterDom/ProductsItems/Shoes"
 import ShoesDetails from './comReactRouterDom/ProductsItems/ShoesDetails';
+import AuthProvider from './protectedRouter/AuthProvider';
 let Mobile = lazy(() => import("./comReactRouterDom/ProductsItems/Mobile"))
 
 // import UseIdHookExample from './comUsIdHook/UseIdHookExample';
@@ -152,7 +153,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/homeWorkTasks' element={<HomeWorkTasks />} />
-        <Route path='/about' element={<About />} />
+        <Route path='/about' element={<AuthProvider>
+          <About />
+        </AuthProvider>} />
         <Route path="/products" element={<Products />}>
           <Route index element={<Shoes />} />
           <Route path="laptop" element={<Laptop />} />

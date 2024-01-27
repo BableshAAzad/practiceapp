@@ -1,9 +1,10 @@
 import React from 'react'
+import Modal from './comReactModel/Modal'
 
 function Home() {
   return (
     <div>
-      <h1>Home Page</h1>
+      <Modal/>
     </div>
   )
 }
