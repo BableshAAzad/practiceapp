@@ -19,6 +19,7 @@ import { lazy } from 'react';
 import Shoes from "./comReactRouterDom/ProductsItems/Shoes"
 import ShoesDetails from './comReactRouterDom/ProductsItems/ShoesDetails';
 import AuthProvider from './protectedRouter/AuthProvider';
+import ReactPortal from './comReactRouterDom/ReactPortal';
 let Mobile = lazy(() => import("./comReactRouterDom/ProductsItems/Mobile"))
 
 // import UseIdHookExample from './comUsIdHook/UseIdHookExample';
@@ -168,6 +169,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/loginForm' element={<LoginForm />} />
         <Route path="/products/mobile/:pid" element={<ProductDetails />} />
+        <Route path="/reactPortal" element ={<ReactPortal/>} />
         <Route path='*' element={<Pnf />} />
       </Routes>
     </BrowserRouter >

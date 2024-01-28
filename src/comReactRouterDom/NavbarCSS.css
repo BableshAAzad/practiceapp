@@ -3,9 +3,16 @@
     padding: 10px;
     margin-bottom: 50px;
 }
-#navItems a{
+
+#navItems a {
     font-size: 20px;
     color: white;
     margin-left: 30px;
     text-decoration: none;
+}
+
+.active {
+    background-color: rgb(127, 150, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
 }
