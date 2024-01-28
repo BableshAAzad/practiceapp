@@ -1,0 +1,30 @@
+.addToCartR .fa-solid{
+    color: blueviolet;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+.mainProR {
+    border: 1px solid rgb(141, 130, 130);
+    width: fit-content;
+    padding: 1rem;
+    height: 18rem;
+    margin-left: 5rem;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 1rem blueviolet;
+}
+
+.mainProR .productImgR img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.mainProR .poductContainR button {
+    padding: 0.4rem;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+}

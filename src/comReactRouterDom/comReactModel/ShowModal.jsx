@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import "./ModelCSS.css"
+import ReactDOM from "react-dom"
 
 function ShowModal({ closeModel }) {
     useEffect(() => {
@@ -8,7 +9,7 @@ function ShowModal({ closeModel }) {
             document.body.style.overflowY = "scroll";
         };
     }, []);
-    return (
+    return ReactDOM.createPortal(
         <>
             <div className="modal-wrapper" onClick={closeModel}></div>
             <div className="modal-container" >
@@ -20,7 +21,8 @@ function ShowModal({ closeModel }) {
                 <button className='model-btn' onClick={closeModel}>Accept It</button>
             </div>
 
-        </>
+        </>,
+        document.querySelector("#otherRoot")
     )
 }
 
