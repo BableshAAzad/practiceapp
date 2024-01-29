@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 function AuthProvider(props) {
     let [login, setLogin] = useState(null);
+    console.log(setLogin)
     if (login) {
         return (
             <>

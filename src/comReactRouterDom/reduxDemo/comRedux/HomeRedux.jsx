@@ -1,23 +1,42 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./HomeRedux.css"
+import axios from 'axios';
+import { useCallback } from 'react';
 
-function HomeRedux() {
+function HomeRedux(props) {
+  let [isApiData, setIsApiData] = useState([])
+  let fetchApi = useCallback(async () => {
+    try {
+      let datas = await axios.get("https://fakestoreapi.com/products");
+      setIsApiData(datas.data)
+    } catch (error) {
+      console.log(error)
+    }
+  })
+  useEffect(() => {
+    fetchApi()
+    // eslint-disable-next-line
+  }, [])
+  // console.log(isApiData)
   return (
-    <div>
-      <div className='addToCartR'>
-      <i class="fa-solid fa-cart-plus"></i>
-      </div>
-      <h1>Home Redux</h1>
-      <div className='mainProR'>
-        <section className='productImgR'>
-          <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTipwiN7NI4oNqa_oDek_s7AbAXQByGSyaTyJgDvR8X4JypRZyLKUygm58YmvJaGwJMUSg&usqp=CAU' alt='mobilePic' />
-        </section>
-        <section className='poductContainR'>
-          <h2>Iphone-z</h2>
-          <h3>Price : $1000</h3>
-          <button>Add To Card</button>
-        </section>
-      </div>
+    <div className='mainProRedux'>
+      {isApiData.map(({ id, image, price, title }) => {
+        return <div key={id} className='mainProR'>
+          <section className='productImgR'>
+            <img src={image} alt='mobilePic' />
+          </section>
+          <section className='poductContainR'>
+            <h5>{title.substr(0, 25)}...</h5>
+            <h4>Price : ${price}</h4>
+            <button className='addBtnRdx' onClick={() => props.addToCartHandler({
+              price: { price },
+              model: { title }
+            })}>Add To Card</button>
+            <button className='removeBtnRdx' onClick={() =>
+              props.removeToCartHandler()}>Remove To Card</button>
+          </section>
+        </div>
+      })}
     </div>
   )
 }

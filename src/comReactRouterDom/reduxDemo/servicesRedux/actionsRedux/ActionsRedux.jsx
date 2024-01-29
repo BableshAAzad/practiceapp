@@ -1,6 +1,7 @@
-import { ADD_TO_CART } from "../constaintsRedux"
+import { ADD_TO_CART,REMOVE_TO_CART } from "../constaintsRedux"
 
 export let addToCartR = (data) => {
+  // console.log("action", data)
   return (
     {
       type: ADD_TO_CART,
@@ -9,11 +10,11 @@ export let addToCartR = (data) => {
   )
 }
 
-export let removeToCartR = (data) => {
+export let removeToCartR = () => {
+  // console.log("action")
   return (
     {
-      type: "REMOVE_TO_CART",
-      data: data
+      type: REMOVE_TO_CART,
     }
   )
 }

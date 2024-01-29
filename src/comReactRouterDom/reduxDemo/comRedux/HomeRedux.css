@@ -1,30 +1,61 @@
-.addToCartR .fa-solid{
+.addToCartR {
     color: blueviolet;
     font-size: 2.5rem;
     position: absolute;
-    top: 10%;
-    right: 5%;
+    top: 3.8rem;
+    right: 1.6rem;
 }
-.mainProR {
+
+.addToCartR span {
+    position: absolute;
+    z-index: 1;
+    /* border: 1px solid rgb(185, 110, 169); */
+    color: white;
+    background-color: blueviolet;
+    width: 1.6rem;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    right: -0.7rem;
+    top: -0.6rem;
+}
+
+.mainProRedux {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainProRedux .mainProR {
     border: 1px solid rgb(141, 130, 130);
-    width: fit-content;
+    width: 13rem;
     padding: 1rem;
-    height: 18rem;
-    margin-left: 5rem;
+    height: 16rem;
+    /* margin-left: 5rem; */
     border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem 1rem blueviolet;
+    margin: 1rem;
 }
 
-.mainProR .productImgR img {
-    width: 10rem;
-    height: 10rem;
+.mainProRedux .mainProR .productImgR img {
+    width: 6rem;
+    height: 6rem;
 }
 
-.mainProR .poductContainR button {
+.mainProRedux .mainProR .poductContainR .addBtnRdx {
     padding: 0.4rem;
     color: white;
     background-color: blueviolet;
     border: none;
     border-radius: 0.3rem;
     margin-top: 0.5rem;
+    margin-right: 0.2rem;
+}
+
+.mainProRedux .mainProR .poductContainR .removeBtnRdx {
+    padding: 0.4rem;
+    color: white;
+    background-color: rgb(226, 43, 150);
+    border: none;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+    margin-right: 0.2rem;
 }
