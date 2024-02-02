@@ -7,6 +7,7 @@ function Navbar() {
     <div id='navItems'>
       <NavLink to="/">Home</NavLink>
       <NavLink to="/homeWorkTasks">HomeWorkTasks</NavLink>
+      <NavLink to="/practice">Practice</NavLink>
       <NavLink to="/reactPortal">ReactPortal</NavLink>
       <NavLink to="/reduxMainCom">ReduxDemo</NavLink>
       <NavLink to="/about">About</NavLink>

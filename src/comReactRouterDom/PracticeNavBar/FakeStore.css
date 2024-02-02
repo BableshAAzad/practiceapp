@@ -1,0 +1,16 @@
+.mainDivFakeStore{
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+.mainDivFakeStore .cartDivStore{
+    /* border: 0.1rem solid red; */
+    margin: 1rem;
+    width: 12rem;
+    box-shadow: 0.1rem 0.1rem 0.7rem blueviolet;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+.mainDivFakeStore .cartDivStore button{
+    font-size: 0.8rem;
+}

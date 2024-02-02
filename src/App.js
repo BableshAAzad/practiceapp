@@ -21,6 +21,11 @@ import ShoesDetails from './comReactRouterDom/ProductsItems/ShoesDetails';
 import AuthProvider from './protectedRouter/AuthProvider';
 import ReactPortal from './comReactRouterDom/ReactPortal';
 import ReduxMainCom from './comReactRouterDom/reduxDemo/ReduxMainCom';
+import Practice from './comReactRouterDom/Practice';
+import UesRefDemo from './comReactRouterDom/PracticeNavBar/UesRefDemo';
+import UseParamDemo from './comReactRouterDom/PracticeNavBar/UseParamDemo';
+import FakeStore from "./comReactRouterDom/PracticeNavBar/FakeStore";
+let LagyLoadDemo = lazy(() => import("./comReactRouterDom/PracticeNavBar/LagyLoadDemo"))
 let Mobile = lazy(() => import("./comReactRouterDom/ProductsItems/Mobile"))
 
 // import UseIdHookExample from './comUsIdHook/UseIdHookExample';
@@ -155,6 +160,12 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/homeWorkTasks' element={<HomeWorkTasks />} />
+        <Route path='/practice' element={<Practice />}>
+          <Route path='demoUseRef' element={<UesRefDemo />} />
+          <Route path='loadLagyDemo' element={<LagyLoadDemo />} />
+          <Route path="demoUseParam/:sid" element={<UseParamDemo />} />
+          <Route path='fakeStore' element={<FakeStore />} />
+        </Route>
         <Route path='/about' element={<AuthProvider>
           <About />
         </AuthProvider>} />

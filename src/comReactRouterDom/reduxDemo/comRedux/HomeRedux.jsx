@@ -12,7 +12,7 @@ function HomeRedux(props) {
     } catch (error) {
       console.log(error)
     }
-  })
+  },[])
   useEffect(() => {
     fetchApi()
     // eslint-disable-next-line
